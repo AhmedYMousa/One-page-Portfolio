@@ -9,6 +9,18 @@ body {
     font-family: sans-serif, "Arial", "Tahoma";
     font-size: 14px;
     line-height: 1.6;
+    animation: bodyAnimation ease-in-out 1s 1;
+}
+
+@keyframes bodyAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 header {
@@ -38,13 +50,13 @@ header {
     padding: 0 15px;
     text-decoration: none;
 }
+
 #navbar li a:after {
-    content:"\25BF";
+    content: "\25BF";
     color: #fff;
     padding-left: 5px;
     position: absolute;
-    top:15px;
-
+    top: 15px;
 }
 
 #promo-contaier {
@@ -129,7 +141,7 @@ header {
     clear: both;
 }
 
-.col-3{
+.col-3 {
     width: 25%;
     position: relative;
     float: left;
@@ -137,6 +149,7 @@ header {
     padding: 0 15px;
     height: 400px;
 }
+
 .col-6 {
     width: 50%;
     position: relative;
@@ -146,57 +159,74 @@ header {
     height: 400px;
 }
 
-
-
-.grid > .col-3> h2 {
+.grid>.col-3>h2 {
     width: 200px;
     text-align: center;
-    margin:30px auto 0;
+    margin: 30px auto 0;
     color: #282828;
     font-size: 2em;
 }
 
-.grid > .col-3:first-child > h3 {
+.grid>.col-3:first-child>h3 {
     width: 200px;
     text-align: right;
-    margin:0 auto 15px;
+    margin: 0 auto 15px;
     color: #a21af0;
     margin-bottom: 15px;
 }
 
 #profile-img {
     display: block;
-margin:0 auto;
+    margin: 0 auto;
     width: 450px;
     height: 400px;
 }
-.progress-txt{
+
+.progress-txt {
     text-align: center;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .progress-bar {
-    color:#fff;
-    font-size:10px;
+    position: relative;
+    color: #fff;
+    font-size: 10px;
     text-align: center;
-    width:250px;
-    height: 10px;
+    width: 250px;
+    height: 12px;
     border-radius: 20px;
-    border:none;
-    outline:none;
-    margin:0 auto 5px;
-    background-image:linear-gradient(45deg,#a21af0 ,#ff0072 );
+    border: none;
+    outline: none;
+    margin: 0 auto 5px;
+    background-image: linear-gradient(45deg, #a21af0 0%, #ff0072 100%);
 }
 
 .w-80 {
-    background-image:linear-gradient(45deg,#a21af0 80%,rgb(253, 0, 118) ,#ff0072  );   
+    /* background-image:linear-gradient(45deg,#a21af0 80%,rgb(253, 0, 118) ,#ff0072  );    */
+    background-color: #282828;
 }
 
-.w-70{
-    background-image:linear-gradient(45deg,#a21af0 70%,rgb(253, 0, 118) ,#ff0072 );    
+.w-70 {
+    background-image: linear-gradient(45deg, #a21af0 70%, rgb(253, 0, 118), #ff0072);
+}
+
+.progress-bar-active {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    animation: active 2s linear infinite;
+}
+
+@keyframes active {
+    0% {
+        background-position: 40px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 #info {
     height: 100px;
-    background-color:#dcdcde;
+    background-color: #dcdcde;
 }
