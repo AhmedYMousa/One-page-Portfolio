@@ -9,7 +9,6 @@ body {
     font-family: sans-serif, "Arial", "Tahoma";
     font-size: 14px;
     line-height: 1.6;
-    animation: bodyAnimation ease-in-out 1s 1;
 }
 
 @keyframes bodyAnimation {
