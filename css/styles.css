@@ -11,16 +11,7 @@ body {
     line-height: 1.6;
 }
 
-@keyframes bodyAnimation {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+
 
 header {
     width: 100%;
@@ -118,6 +109,7 @@ header {
     width: 100%;
     height: 400px;
     background-color: #fff;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -146,7 +138,6 @@ header {
     float: left;
     min-height: 1px;
     padding: 0 15px;
-    height: 400px;
 }
 
 .col-6 {
@@ -155,7 +146,6 @@ header {
     float: left;
     min-height: 1px;
     padding: 0 15px;
-    height: 400px;
 }
 
 .grid>.col-3>h2 {
@@ -202,8 +192,7 @@ header {
 }
 
 .w-80 {
-    /* background-image:linear-gradient(45deg,#a21af0 80%,rgb(253, 0, 118) ,#ff0072  );    */
-    background-color: #282828;
+    background-image: linear-gradient(45deg, #a21af0 80%, rgb(253, 0, 118), #ff0072);
 }
 
 .w-70 {
@@ -216,6 +205,85 @@ header {
     animation: active 2s linear infinite;
 }
 
+
+
+#info {
+    height: 100px;
+    background-color: #dcdcde;
+}
+
+.col-4 {
+    width: 33%;
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+}
+
+.col-4>.info-wrapper {
+    width: 300px;
+    margin: 10px auto;
+    height: 80px;
+}
+
+.col-4>.info-wrapper::before,
+.col-4>.info-wrapper::after {
+    display: table;
+    content: "";
+}
+
+.col-4>.info-wrapper::after {
+    clear: both;
+}
+
+.col-4>.info-wrapper>.info-icon {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #374362;
+    float: left;
+}
+
+.col-4>.info-wrapper>.info-txt {
+    float: left;
+    margin: 10px;
+}
+
+.col-4>.info-wrapper>.info-icon>.icon {
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    width: 20px;
+    height: 20px;
+}
+#portfolio {
+    display: block;
+}
+
+.cssgrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1em;
+}
+
+
+
+
+
+/* Keyframes */
+@keyframes bodyAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes active {
     0% {
         background-position: 40px 0;
@@ -223,9 +291,4 @@ header {
     100% {
         background-position: 0 0;
     }
-}
-
-#info {
-    height: 100px;
-    background-color: #dcdcde;
 }
