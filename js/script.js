@@ -6,6 +6,14 @@ $(document).ready(function () {
             $(".active").removeClass("active");
         $(this).addClass("active");
     });
+    $("a.send").click(function(event){
+       var name= $("#contact-name").val();
+       var email= $("#contact-email").val();
+       var subject= $("#contact-subject").val();
+       var message= $("#contact-message").val();
+       $(this).attr({"href":"mailto:john@example.com?subject="+subject+"&body="+message+"&from="+email});
+    });
+
 });
 
 
