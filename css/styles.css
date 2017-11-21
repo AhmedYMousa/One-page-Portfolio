@@ -38,9 +38,11 @@ header {
     padding: 0 15px;
     text-decoration: none;
 }
+
 #navbar li a.active {
-    color:lime;
+    color: lime;
 }
+
 #navbar li a:after {
     content: "\25BF";
     color: #fff;
@@ -93,7 +95,7 @@ header {
     text-transform: uppercase;
 }
 
-#cv-btn {
+.cv-btn {
     width: 150px;
     height: 30px;
     margin-top: 50px;
@@ -249,7 +251,6 @@ h2.info-caption {
     background-color: #222;
 }
 
-
 .box-1 {
     background-image: url("../images/grid1.jpg");
     background-size: cover;
@@ -257,6 +258,7 @@ h2.info-caption {
     grid-column: span 4;
     grid-row: span 4;
 }
+
 .box-2 {
     background-image: url("../images/grid2.jpg");
     background-size: cover;
@@ -280,6 +282,7 @@ h2.info-caption {
     grid-column: span 4;
     grid-row: span 2;
 }
+
 .box-5 {
     background-image: url("../images/grid5.jpg");
     background-size: cover;
@@ -287,6 +290,7 @@ h2.info-caption {
     grid-column: span 3;
     grid-row: span 3;
 }
+
 .box-6 {
     background-image: url("../images/grid6.jpg");
     background-size: cover;
@@ -294,6 +298,7 @@ h2.info-caption {
     grid-column: span 2;
     grid-row: span 3;
 }
+
 .box-7 {
     background-image: url("../images/grid7.jpg");
     background-size: cover;
@@ -301,6 +306,7 @@ h2.info-caption {
     grid-column: span 3;
     grid-row: span 3;
 }
+
 .box-8 {
     background-image: url("../images/grid8.jpg");
     background-size: cover;
@@ -308,6 +314,7 @@ h2.info-caption {
     grid-column: span 3;
     grid-row: span 3;
 }
+
 .box-9 {
     background-image: url("../images/grid9.jpg");
     background-size: cover;
@@ -332,13 +339,49 @@ h2.info-caption {
 .box:hover::after {
     opacity: 0.2;
 }
-.section-caption{
+
+.section-caption {
     text-align: center;
     font-size: 4em;
     font-family: "Lobster Two";
-    margin:20px 0;
+    margin: 20px 0;
 }
 
+#contact {
+    height:500px;
+    margin-top:50px;
+    background-image: url("../images/contact-bg.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width:800px;
+    height: 400px;
+    background-color: #15263e;
+    color:#fff;
+    text-align: center;
+}
+.contact-form>h1{
+    padding: 30px 0 10px;
+    font-size: 2em;
+}
+
+.form-input{
+    display: block;
+    width:300px;
+    height: 30px;
+    margin:20px auto;
+    padding:5px;
+    
+}
+
+input.form-input:nth-of-type(4){
+    height: 60px;
+}
 
 /* Keyframes */
 
