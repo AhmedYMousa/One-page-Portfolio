@@ -3,6 +3,7 @@ $(document).ready(function () {
     $("#navbar").on("click", "li > a", function (event) {
         $("html,body").animate({
             scrollTop: $(this.hash).offset().top - 70}, 1000);
+            $(".active").removeClass("active");
         $(this).addClass("active");
     });
 });
