@@ -3,6 +3,7 @@
 This is a one page portfolio and resume template.
 This project contains the following features:
 
+- CSS Preloader.
 - Custom CSS styles.
 - CSS Flexbox.
 - CSS Grids.

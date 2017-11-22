@@ -390,6 +390,34 @@ input.form-input:nth-of-type(4){
     height: 60px;
 }
 
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+
+#spinner{
+    width:80px;
+    height: 80px;
+    border:2px solid #f3f3f3;
+    border-top: 3px solid #ff0072;
+    border-radius: 100%;
+    /*Centering the spinner vertically and horizontally*/
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    /* Add spinning animation */
+    animation: spin 1s linear infinite;
+
+}
+
 /* Keyframes */
 
 @keyframes bodyAnimation {
@@ -410,4 +438,14 @@ input.form-input:nth-of-type(4){
     100% {
         background-position: 0 0;
     }
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+    
 }
